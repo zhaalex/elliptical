@@ -1,1 +1,1 @@
-This is a small test package createdas an example for the iXperience Data Science course.
+A tiny test package created as an example for the [iXperience](http://ixperience.co.za/) Data Science course.
