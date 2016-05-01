@@ -1,0 +1,12 @@
+Package: shapes
+Type: Package
+Title: Functions for Geometric Shapes
+Version: 0.1.0
+Authors@R: person("Billy", "Geometer", email = "richard.geometer@example.com", role = c("aut", "cre"))
+Description: Functions to calculate the areas and perimeters of a selection of
+    geometric shapes.
+License: GPL-3
+LazyData: TRUE
+Imports: pracma
+Suggests: testthat
+RoxygenNote: 5.0.0
