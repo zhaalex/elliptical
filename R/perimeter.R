@@ -4,10 +4,10 @@
 #' @param e The eccentricity.
 #' @return The length of the perimeter of the ellipse with specified semi-major axis and eccentricity.
 #' @examples
-#' perimeter_ellipse(1, 1)
-#' perimeter_ellipse(1)
+#' ellipse_perimeter(1, 1)
+#' ellipse_perimeter(1)
 #' @export
-perimeter_ellipse <- function(r, e = 0) {
+ellipse_perimeter <- function(r, e = 0) {
   if (e < 0 || e > 1) stop("Invalid eccentricity!", call. = FALSE)
   if (e == 0) {
     2 * pi * r
