@@ -1,10 +1,9 @@
-Package: shapes
+Package: elliptical
 Type: Package
-Title: Functions for Geometric Shapes
+Title: Functions for Ellipses
 Version: 0.1.0
 Authors@R: person("Billy", "Geometer", email = "richard.geometer@example.com", role = c("aut", "cre"))
-Description: Functions to calculate the areas and perimeters of a selection of
-    geometric shapes.
+Description: Functions to calculate various characteristics of ellipses.
 License: GPL-3
 LazyData: TRUE
 Imports: pracma
