@@ -1,3 +1,5 @@
+# Distances are in units of 1 000 000 km.
+#
 planets <- data.frame(
   name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'),
   distance = c(57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4),
