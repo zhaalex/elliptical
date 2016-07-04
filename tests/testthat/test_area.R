@@ -1,4 +1,4 @@
-library(shapes)
+library(elliptical)
 
 context("Area")
 
