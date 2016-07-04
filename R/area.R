@@ -1,6 +1,6 @@
 #' Calculate the area of an ellipse.
 #'
-#' @param t Length of the semi-major axis.
+#' @param r Length of the semi-major axis.
 #' @param e The eccentricity.
 #' @return The area of the ellipse with specified semi-major axis and eccentricity.
 #' @examples
