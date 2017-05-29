@@ -11,7 +11,7 @@
   \item{eccentricity}{orbital eccentricity.}
 }}
 \source{
-These data were constructed using information from \href{http://nssdc.gsfc.nasa.gov/planetary/factsheet/}{NASA's Planetary Fact Sheet}.
+These data were constructed using information from NASA's Planetary Fact Sheet at http://nssdc.gsfc.nasa.gov/planetary/factsheet/.
 }
 \usage{
 planets
@@ -24,4 +24,3 @@ the planets in the Solar System. I'm old school, so Pluto is still in there.
 plot(eccentricity ~ distance, data = planets)
 }
 \keyword{datasets}
-

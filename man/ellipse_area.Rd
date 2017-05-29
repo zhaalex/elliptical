@@ -7,9 +7,9 @@
 ellipse_area(r, e = 0)
 }
 \arguments{
-\item{e}{The eccentricity.}
+\item{r}{Length of the semi-major axis.}
 
-\item{t}{Length of the semi-major axis.}
+\item{e}{The eccentricity.}
 }
 \value{
 The area of the ellipse with specified semi-major axis and eccentricity.
@@ -21,4 +21,3 @@ Calculate the area of an ellipse.
 ellipse_area(1, 1)
 ellipse_area(1)
 }
-

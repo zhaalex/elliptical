@@ -7,9 +7,9 @@
 ellipse_perimeter(r, e = 0)
 }
 \arguments{
-\item{e}{The eccentricity.}
+\item{r}{Length of the semi-major axis.}
 
-\item{t}{Length of the semi-major axis.}
+\item{e}{The eccentricity.}
 }
 \value{
 The length of the perimeter of the ellipse with specified semi-major axis and eccentricity.
@@ -21,4 +21,3 @@ Calculate the length of the perimeter of an ellipse.
 ellipse_perimeter(1, 1)
 ellipse_perimeter(1)
 }
-
