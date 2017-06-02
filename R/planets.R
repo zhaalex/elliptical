@@ -8,6 +8,8 @@
 #'   \item{name}{planet name;}
 #'   \item{distance}{length of orbital semi-major axis [units: AU];}
 #'   \item{eccentricity}{orbital eccentricity.}
+#'   \item{obs.precession}{observed perihelion precession rate of planet [units: arcseconds per planetary-year]}
+#'   \item{theor.precession}{theoretical perihelion precession rate of planet [units: arcseconds per planetary-year]}
 #' }
 #' @source
 #' These data were constructed using information from NASA's Planetary Fact Sheet at http://nssdc.gsfc.nasa.gov/planetary/factsheet/.
@@ -21,7 +23,9 @@ if (FALSE) {
   planets <- data.frame(
     name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'),
     distance = c(57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4),
-    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244)
+    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244),
+    obs.precession = c(5.75, 2.04, 11.45, 16.28, 6.55, 19.50, 3.34, 0.36, NA),
+    theor.precession = c(5.50, 10.75, 11.87, 17.60, 7.42, 18.36, 2.72, 0.65, NA)
   )
   #
   # Convert from km to AU.
