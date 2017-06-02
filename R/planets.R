@@ -30,3 +30,19 @@ if (FALSE) {
 
   devtools::use_data(planets, overwrite = TRUE)
 }
+#Ellipses for Jupiter's Galilean Moons
+if (FALSE) {
+  # Distances are in units of km.
+  #
+  planets <- data.frame(
+    name = c('Io','Europa','Ganymede','Callisto'),
+    distance = c(422,000,	671,000,1,070,000,	1,883,000),
+    eccentricity = c(0.0041,0.0094,0.0011,0.0074)
+  )
+  #
+  # Convert from km to AU.
+  #
+  planets <- transform(planets, distance = distance * 1 / 1.496e8)
+  
+  devtools::use_data(planets, overwrite = TRUE)
+}
