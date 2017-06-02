@@ -2,6 +2,7 @@
 #'
 #' A dataset containing the name, orbital radius and orbital eccentricity of
 #' the planets in the Solar System. I'm old school, so Pluto is still in there.
+#' Added in three more planets that are considered one of the more Earth-like alien planets. (see more at http://www.space.com/30172-six-most-earth-like-alien-planets.html)
 #'
 #' @format A data frame with 9 records and 3 variables:
 #' \describe{
@@ -19,9 +20,9 @@ if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
   planets <- data.frame(
-    name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'),
-    distance = c(57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4),
-    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244)
+    name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto',"Gliese 667Cc", "Kepler-22b", "Kepler-69c"),
+    distance = c(57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4, 18.71, 12.7, 95.74 ),
+    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244,0.133, 0, 0.14)
   )
   #
   # Convert from km to AU.
