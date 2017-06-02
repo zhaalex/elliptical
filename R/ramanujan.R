@@ -4,7 +4,7 @@
 #' @param b #semi-minor axis
 #'
 #' @return #circumference of circle/ellipse
-#' @export
+#' @export 
 #'
 #' @examples
 #' ramanujan(10,12) = 69.25791
