@@ -4,7 +4,7 @@
 #' the planets in the Solar System. I'm old school, so Pluto is still in there.
 #'
 #' @format A data frame with 9 records and 3 variables:
-#' \describe{s
+#' \describe{
 #'   \item{name}{planet name;}
 #'   \item{distance}{length of orbital semi-major axis [units: AU];}
 #'   \item{eccentricity}{orbital eccentricity.}
