@@ -19,7 +19,6 @@ if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
   asteroids <- data.frame(
-    number = c('1', '2', '3', '4', '21'),
     name = c('Ceres', 'Pallas', 'Juno', 'Vesta', 'Lutetia'),
     distance = c(414.1, 414.7, 399.4, 353.4, 364.3),
     eccentricity = c(0.076, 0.231, 0.256, 0.089, 0.165)
