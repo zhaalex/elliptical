@@ -20,10 +20,10 @@ if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
   planets <- data.frame(
-    name = c('Luna'), # Only the Earth's moon has been added so far. To be continued...
-    planetNames = c('Earth'), # TODO: Add more
-    distance = c(0.3844),
-    eccentricity = c(0.0549)
+    name = c('Luna', 'Phobos', 'Deimos'), # Only Earth and Mars' moons have been added. To be continued...
+    planetNames = c('Earth', 'Mars', 'Mars'), # TODO: Add more
+    distance = c(0.3844, 0.009376, 0.0234632),
+    eccentricity = c(0.0549, 0.0151, 0.00033)
   )
   #
   # Convert from km to AU.
