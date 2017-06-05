@@ -28,5 +28,4 @@ if (FALSE) {
   #
   planets <- transform(moons, distance = distance * 1e6 / 1.496e8)
   
-  devtools::use_data(moons, overwrite = TRUE)
-}
+  devtools::use_data(moons, overwrite = TRUE)}
