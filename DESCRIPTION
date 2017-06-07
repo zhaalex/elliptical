@@ -4,7 +4,8 @@ Title: Functions for Ellipses
 Version: 0.1.0
 Authors@R: c(person("Andrew", "Collier", email = "andrew@exegetic.biz", role = c("aut", "cre")),
              person("Holt", "Crews", email = "holtcrews47@gmail.com", role = "ctb"),
-             person("Rice", "Tyler", email = "rht6nf@virginia.edu", role = "ctb"))
+             person("Rice", "Tyler", email = "rht6nf@virginia.edu", role = "ctb"),
+             person("Raghav", "Kumar", email = "raghavku@usc.edu", role = "ctb"))
 Description: Functions to calculate various characteristics of ellipses.
 License: GPL-3
 Depends: R (>= 2.10)
