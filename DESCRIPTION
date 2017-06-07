@@ -7,6 +7,7 @@ Authors@R: c(person("Andrew", "Collier", email = "andrew@exegetic.biz", role = c
              person("Rice", "Tyler", email = "rht6nf@virginia.edu", role = "ctb"))
 Description: Functions to calculate various characteristics of ellipses.
 License: GPL-3
+Depends: R (>= 2.10)
 LazyData: TRUE
 Imports: pracma
 Suggests: testthat
