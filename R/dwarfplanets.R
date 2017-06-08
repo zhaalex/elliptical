@@ -26,7 +26,9 @@ if (FALSE) {
   dwarfplanets <- data.frame(
     name = c('Eris', 'Haumea', 'Makemake'),
     distance = c(10172.8, 6447.8, 6776.9),
-    eccentricity = c(0.441, 0.191, 0.156 )
+    eccentricity = c(0.441, 0.191, 0.156 ),
+    mass = c(1.66*10**22, 4.01*10**21, 2.5*10**21),
+    period = c(560, 285, 310)
   )
   #
   # Convert from km to AU.
