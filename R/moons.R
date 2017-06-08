@@ -26,7 +26,7 @@ if (FALSE) {
   #
   # Convert from km to AU.
   #
-  planets <- transform(moons, distance = distance * 1e6 / 1.496e8)
+  moons <- transform(moons, distance = distance * 1e6 / 1.496e8)
   
   devtools::use_data(moons, overwrite = TRUE)
 }
