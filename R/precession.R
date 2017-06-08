@@ -26,10 +26,10 @@ precession_newt = function() {
         (1 + (15/8)*(distance_ratio**2) + (175/64)*(distance_ratio**4))
     }
     
-    for (outer_body in (body+1):nrow(celestial_bodies)) {
+    for (outer_body in (body):nrow(celestial_bodies)) {
       
       if (outer_body == body) {
-        break # for the last celestial body
+        next # for the last celestial body
       }
       
       distance_ratio = celestial_bodies$distance[[body]] / celestial_bodies$distance[[outer_body]]
@@ -39,7 +39,7 @@ precession_newt = function() {
         (1 + (15/8)*(distance_ratio**2) + (175/64)*(distance_ratio**4))
     }
     
-    precession[body] = precession[body] * (75/celestial_bodies$period)
+    precession[body] = precession[body] * (75 / celestial_bodies$period[[body]])
   }
   
   celestial_bodies$precession = precession
@@ -47,4 +47,6 @@ precession_newt = function() {
   planets = merge(x = planets, y = celestial_bodies, by = "name")
   dwarfplanets = merge(x = dwarfplanets, y = celestial_bodies, by = "name")
   asteroids = merge(x = asteroids, y = celestial_bodies, by = "name")
+  
+  return(planets)
 }

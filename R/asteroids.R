@@ -17,7 +17,7 @@
 #' plot(eccentricity ~ distance, data = asteroids)
 "asteroids"
 
-if (FALSE) {
+if (TRUE) {
   # Distances are in units of 1 000 000 km.
   #
   asteroids <- data.frame(

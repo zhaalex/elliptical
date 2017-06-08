@@ -22,7 +22,7 @@
 #' plot(eccentricity ~ distance, data = dwarf.planets)
 "dwarfplanets"
 
-if (FALSE) {
+if (TRUE) {
   # Distances are in units of 1 000 000 km.
   #
   dwarfplanets <- data.frame(
