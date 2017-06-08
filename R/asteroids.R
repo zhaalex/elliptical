@@ -8,6 +8,8 @@
 #'   \item{name}{asteroid name;}
 #'   \item{distance}{length of orbital semi-major axis [units: AU];}
 #'   \item{eccentricity}{orbital eccentricity.}
+#'   \item{mass}{asteroid mass [units: kg];}
+#'   \item{period}{orbital period [units: earth years];}
 #' }
 #' @source
 #' These data were constructed using information from NASA's Planetary Fact Sheet at https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html.

@@ -1,6 +1,7 @@
 #' calculation of theoretical perihelion precession of celestial bodies using Newtonian mechanics
 #' 
-#' 
+#' @source 
+#' The formula used in calculating precession was taken from Richard Fitzpatrick's physics notes. http://farside.ph.utexas.edu/teaching/336k/Newtonhtml/node115.html#e13.126
 
 precession_newt = function() {
   celestial_bodies = rbind(planets, dwarfplanets, asteroids)
@@ -27,7 +28,7 @@ precession_newt = function() {
     
     for (outer_body in (body+1):nrow(celestial_bodies)) {
       
-      if (outer_body == body)) {
+      if (outer_body == body) {
         break # for the last celestial body
       }
       
