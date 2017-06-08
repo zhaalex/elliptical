@@ -9,7 +9,7 @@ precession_newt = function() {
   celestial_bodies = celestial_bodies[complete.cases(celestial_bodies), ]
   
   precession = c(rep(0, nrow(celestial_bodies)))
-  mass_sun = 1.989 * 10**30
+  sun_mass = 1.989 * 10**30
   
   for (body in 1:nrow(celestial_bodies)) {
     
