@@ -1,6 +1,8 @@
+#' calculation of theoretical perihelion precession of celestial bodies using Newtonian mechanics
+#' 
+#' 
 
-
-precession_nonrel = function() {
+precession_newt = function() {
   celestial_bodies = rbind(planets, dwarfplanets, asteroids)
   celestial_bodies = celestial_bodies[order(celestial_bodies$distance), ]
   celestial_bodies = celestial_bodies[complete.cases(celestial_bodies), ]
@@ -12,7 +14,7 @@ precession_nonrel = function() {
     
     for (inner_body in 1:(body-1)) {
       
-      if (inner_body == 1) {
+      if (inner_body == body ) {
         break # for the first celestial body
       }
       
@@ -25,7 +27,7 @@ precession_nonrel = function() {
     
     for (outer_body in (body+1):nrow(celestial_bodies)) {
       
-      if (outer_body == nrow(celestial_bodies)) {
+      if (outer_body == body)) {
         break # for the last celestial body
       }
       
