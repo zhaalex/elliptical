@@ -17,3 +17,4 @@ Depends: R (>= 2.10)
 LazyData: TRUE
 Imports: pracma
 Suggests: testthat
+RoxygenNote:6.0.1.9000
