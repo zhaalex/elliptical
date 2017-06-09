@@ -17,7 +17,7 @@
 #' plot(eccentricity ~ distance, data = planets)
 "planets"
 
-if (TRUE) {
+if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
   planets <- data.frame(
