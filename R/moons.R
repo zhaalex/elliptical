@@ -3,7 +3,7 @@
 #' A dataset containing the name, oribiting planet name, orbital radius and orbital eccentricity of
 #' the moons in the Solar System. I'm old school, so Pluto is still included.
 #'
-#' @format A data frame with 149 records and 4 variables: # TODO: ADD ALL 149 OBSERVABLE MOONS OF THE SOLAR SYSTEM
+#' @format A data frame with 3 records and 4 variables: # TODO: ADD ALL 149 OBSERVABLE MOONS OF THE SOLAR SYSTEM
 #' \describe{
 #'   \item{name}{moon name;}
 #'   \item{planetName}{name of the planet it orbits;}
@@ -19,7 +19,7 @@
 if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
-  planets <- data.frame(
+  moons <- data.frame(
     name = c('Luna', 'Phobos', 'Deimos'), # Only Earth and Mars' moons have been added. To be continued...
     planetNames = c('Earth', 'Mars', 'Mars'), # TODO: Add more
     distance = c(0.3844, 0.009376, 0.0234632),
