@@ -34,3 +34,4 @@ if (FALSE) {
 
   devtools::use_data(planets, overwrite = TRUE)
 }
+

@@ -1,27 +1,29 @@
-#' Specifications of Jupiter's Galilean moons.
+#' Specifications of the moons of each planet in the Solar System.
 #'
-#' A dataset containing the name, orbital radius and orbital eccentricity of
-#' Jupiter's Galilean moons. 
-#' 
-#' @format A data frame with 4 records and 3 variables:
+#' A dataset containing the name, oribiting planet name, orbital radius and orbital eccentricity of
+#' the moons in the Solar System. I'm old school, so Pluto is still included.
+#'
+#' @format A data frame with 7 records and 4 variables: # TODO: ADD ALL 149 OBSERVABLE MOONS OF THE SOLAR SYSTEM
 #' \describe{
 #'   \item{name}{moon name;}
+#'   \item{planetName}{name of the planet it orbits;}
 #'   \item{distance}{length of orbital semi-major axis [units: AU];}
 #'   \item{eccentricity}{orbital eccentricity.}
 #' }
 #' @source
-#' These data were constructed using information from http://www.pa.msu.edu/people/horvatin/Astronomy_Facts/planet_pages/Jupiters_moons.htm
+#' These data were constructed using information from NASA's Planetary Fact Sheet at http://nssdc.gsfc.nasa.gov/planetary/factsheet/.
 #' @examples
-#' plot(eccentricity ~ distance, data = moons)
+#' plot(eccentricity ~ distance, data = planets)
 "moons"
 
 if (FALSE) {
   # Distances are in units of 1 000 000 km.
   #
   moons <- data.frame(
-    name = c('Io','Europa','Ganymede','Callisto'),
-    distance = c(.422000,	.671000,1.070000,	1.883000),
-    eccentricity = c(0.0041,0.0094,0.0011,0.0074)
+    name = c('Luna', 'Phobos', 'Deimos', 'Io','Europa','Ganymede','Callisto'), # Only Earth, Mars, and some of Jupiter's moons have been added. To be continued...
+    planetNames = c('Earth', 'Mars', 'Mars', 'Jupiter', 'Jupiter', 'Jupiter', 'Jupiter'), # TODO: Add more
+    distance = c(0.3844, 0.009376, 0.0234632, .422000, .671000, 1.070000,	1.883000),
+    eccentricity = c(0.0549, 0.0151, 0.00033, 0.0041, 0.0094, 0.0011, 0.0074)
   )
   #
   # Convert from km to AU.
@@ -30,3 +32,4 @@ if (FALSE) {
   
   devtools::use_data(moons, overwrite = TRUE)
 }
+
