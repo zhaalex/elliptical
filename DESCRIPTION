@@ -9,7 +9,8 @@ Authors@R: c(person("Andrew", "Collier", email = "andrew@exegetic.biz", role = c
              person("Rohan", "Karanth", email = "rmk4mk@virginia.edu", role = "ctb"),
              person("Griffin", "Doyle", email = "griffindoyle3@gmail.com", role = "ctb"),
              person("Ray", "Heberer", email = "ray.heberer@gmail.com", role = "ctb"),
-             person("Antonio", "Minondo", email = "aminondo@nd.edu", role = "ctb"))
+             person("Antonio", "Minondo", email = "aminondo@nd.edu", role = "ctb"),
+             person("Cary", "Goeller", email = "carygoeller@gmail.com", role = "ctb"))
 Description: Functions to calculate various characteristics of ellipses.
 License: GPL-3
 Depends: R (>= 2.10)
