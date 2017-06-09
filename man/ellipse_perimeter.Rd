@@ -4,12 +4,14 @@
 \alias{ellipse_perimeter}
 \title{Calculate the length of the perimeter of an ellipse.}
 \usage{
-ellipse_perimeter(r, e = 0)
+ellipse_perimeter(r, e = 0, approx = FALSE)
 }
 \arguments{
 \item{r}{Length of the semi-major axis.}
 
 \item{e}{The eccentricity.}
+
+\item{approx}{Whether to use the Ramanujan approximation.}
 }
 \value{
 The length of the perimeter of the ellipse with specified semi-major axis and eccentricity.
@@ -20,4 +22,5 @@ Calculate the length of the perimeter of an ellipse.
 \examples{
 ellipse_perimeter(1, 1)
 ellipse_perimeter(1)
+ellipse_perimeter(10, 1, approx = T)
 }
