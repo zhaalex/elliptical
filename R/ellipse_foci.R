@@ -4,9 +4,7 @@
 #' @param b length of the minor axis
 #' @return The the distance of the focal point to the center
 #' @examples
-#' ellipse_perimeter(1, 1)
-#' ellipse_perimeter(1)
-#' ellipse_perimeter(10, 1, approx = T)
+#' ellipse_perimeter(5, 3)
 #' @export
 
 ellipse_foci_distance = function( a,b){
