@@ -7,7 +7,7 @@
 #' @examples
 #' ellipse_perimeter(1, 1)
 #' ellipse_perimeter(1)
-#' ellipse_perimeter(10, 1, approx = T)
+#' ellipse_perimeter(10, 1, approx = TRUE)
 #' @export
 ellipse_perimeter <- function(r, e = 0, approx = FALSE) {
   if ((e < 0 || e > 1)) stop("ERROR: Invalid eccentricity!", call. = FALSE)

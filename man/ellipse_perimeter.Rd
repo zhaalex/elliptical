@@ -22,5 +22,5 @@ Calculate the length of the perimeter of an ellipse.
 \examples{
 ellipse_perimeter(1, 1)
 ellipse_perimeter(1)
-ellipse_perimeter(10, 1, approx = T)
+ellipse_perimeter(10, 1, approx = TRUE)
 }
