@@ -2,6 +2,7 @@
 #'
 #' A dataset containing the name, orbital radius and orbital eccentricity of
 #' the planets in the Solar System. I'm old school, so Pluto is still in there.
+#' Added in two more planets that are considered one of the more Earth-like alien planets. (see more at http://www.space.com/30172-six-most-earth-like-alien-planets.html)
 #'
 #' @format A data frame with 9 records and 3 variables:
 #' \describe{
@@ -24,12 +25,12 @@ if (FALSE) {
   # We can add additional astral bodies to calculate their orbit distance and perimeter
   #
   planets <- data.frame(
-    name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto', 'Sedna', 'Quaoar', 'Orcus'),
+    name = c('Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto', 'Sedna', 'Quaoar', 'Orcus',"Kepler-22b", "Kepler-69c"),
     distance = c(57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4, 75816.201, 6488.508, 5899.093),
-    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244, 0.85491, 0.034704, 0.2190),
+    eccentricity = c(0.205, 0.007, 0.017, 0.094, 0.049, 0.057, 0.046, 0.011, 0.244, 0.85491, 0.034704, 0.2190,12.7, 95.74),
     mass = c(3.285*10**23, 4.876*10**24, 5.972*10**24, 6.39*10**23, 1.898*10**27, 5.683*10**26,
-             8.681*10**25, 1.024*10**26, 1.309*10**22, NA, 1.4*10**21, 6.32*10**20),
-    period = c(0.241, 0.615, 1.000, 1.881, 11.86, 29.46, 84.01, 164.8, 247.9, 11400, 284.5, 245.18)
+             8.681*10**25, 1.024*10**26, 1.309*10**22, NA, 1.4*10**21, 6.32*10**20, 1.9303 * 10**30, 1.612 * 10 **30),
+    period = c(0.241, 0.615, 1.000, 1.881, 11.86, 29.46, 84.01, 164.8, 247.9, 11400, 284.5, 245.18, .794, 0.664)
   )
   #code was acutally ran this time
   #
