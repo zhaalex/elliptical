@@ -27,6 +27,8 @@ A dataset containing the name, orbital radius and orbital eccentricity of
 the dwarf planets in the Solar System.
 }
 \examples{
+\dontrun{
 plot(eccentricity ~ distance, data = dwarf.planets)
+}
 }
 \keyword{datasets}

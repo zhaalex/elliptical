@@ -19,7 +19,9 @@
 #' https://en.wikipedia.org/wiki/Makemake
 #' http://www.space.com/18584-dwarf-planets-solar-system-infographic.html
 #' @examples
+#' \dontrun{
 #' plot(eccentricity ~ distance, data = dwarf.planets)
+#' }
 "dwarfplanets"
 
 if (FALSE) {
