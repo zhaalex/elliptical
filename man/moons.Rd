@@ -3,24 +3,27 @@
 \docType{data}
 \name{moons}
 \alias{moons}
-\title{Specifications of Jupiter's Galilean moons.}
-\format{A data frame with 4 records and 3 variables:
+\title{Specifications of the moons of each planet in the Solar System.}
+\format{A data frame with 7 records and 4 variables: # TODO: ADD ALL 149 OBSERVABLE MOONS OF THE SOLAR SYSTEM
 \describe{
-  \item{name}{moon name;}
+  \item{moon}{moon name;}
+  \item{planet}{name of the planet it orbits;}
   \item{distance}{length of orbital semi-major axis [units: AU];}
   \item{eccentricity}{orbital eccentricity.}
 }}
 \source{
-These data were constructed using information from http://www.pa.msu.edu/people/horvatin/Astronomy_Facts/planet_pages/Jupiters_moons.htm
+These data were constructed using information from NASA's Planetary Fact Sheet at http://nssdc.gsfc.nasa.gov/planetary/factsheet/.
 }
 \usage{
 moons
 }
 \description{
-A dataset containing the name, orbital radius and orbital eccentricity of
-Jupiter's Galilean moons.
+A dataset containing the name, oribiting planet name, orbital radius and orbital eccentricity of
+the moons in the Solar System.
 }
 \examples{
-plot(eccentricity ~ distance, data = moons)
+\dontrun{
+plot(eccentricity ~ distance, data = planets)
+}
 }
 \keyword{datasets}
