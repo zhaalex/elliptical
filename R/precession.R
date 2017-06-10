@@ -6,7 +6,7 @@
 precession_newt = function() {
   celestial_bodies = rbind(planets, dwarfplanets, asteroids)
   celestial_bodies = celestial_bodies[order(celestial_bodies$distance), ]
-  celestial_bodies = celestial_bodies[complete.cases(celestial_bodies), ]
+  celestial_bodies = celestial_bodies[stats::complete.cases(celestial_bodies), ]
   
   precession = c(rep(0, nrow(celestial_bodies)))
   sun_mass = 1.989 * 10**30

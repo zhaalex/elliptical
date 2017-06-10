@@ -21,6 +21,7 @@ planets
 \description{
 A dataset containing the name, orbital radius and orbital eccentricity of
 the planets in the Solar System. I'm old school, so Pluto is still in there.
+Added in two more planets that are considered one of the more Earth-like alien planets. (see more at http://www.space.com/30172-six-most-earth-like-alien-planets.html)
 }
 \examples{
 plot(eccentricity ~ distance, data = planets)
