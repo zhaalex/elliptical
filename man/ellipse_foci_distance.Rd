@@ -18,5 +18,5 @@ The the distance of the focal point to the center
 Calculate distance from the center to the focal points
 }
 \examples{
-ellipse_perimeter(5, 3)
+ellipse_foci_distance(1, 0.5)
 }
